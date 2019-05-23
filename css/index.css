@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+
+}
+body{
+    margin-left: 0px;
+}
+header{
+    background-color: rgb(29, 29, 29);
+}
+
+#elh{
+    margin-bottom: 20px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.conten{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    padding: 10px;
+    
+}
+
+
+.cont-input{
+    border-radius: 4px;
+    padding: 10px;
+    background-color: lightgrey;
+    width: 80%;
+    display: grid;
+   margin: auto;
+}
+
+.cont-input input{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    border-radius:  5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: solid gray 1px;
+    
+}
+.cont-input textarea{
+    font-size: 20px;
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: solid gray 1px;
+}
+
+.cont-input a{
+    text-align: center;
+    background-color: rgb(226, 29, 29);
+    color: white;
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.cont-input a:hover{
+    background-color: rgb(255, 31, 31);
+}
+
+.boton{
+    border: solid gray 1px;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 30px;
+    background-color: #2650BA;
+    color: white;  
+    margin-bottom: 10px;  
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: rgb(59, 97, 192);
+}
+
+.cont-tabla{
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+
+.cont-tabla table{
+    border-collapse: collapse; /*junta las Celdas*/
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px; 
+    border: solid 1px black;
+
+    margin-bottom: 80px;
+}
+
+.cont-tabla table thead{
+    background-color: white;
+    color: black; 
+    border-bottom: solid 1px black;
+}
+tr:nth-child(even){
+    background-color:rgb(243, 243, 243); 
+}
+
+table, th, td {
+    border-right: 1px solid black;
+  }
+
+tr:hover td{
+	background-color:gray;
+    color: white;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.eliminar{
+    border: solid 2px black;
+    border-radius: 5px;
+    color: lightgrey;
+    background-color: rgb(255, 37, 37);
+}
+.eliminar:hover{
+    background-color: rgb(253, 76, 76);
+}
+
+
+.ver{
+    border: solid 2px black;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(199, 247, 199);
+}
+
+.ver:hover{
+    background-color: rgb(88, 179, 88);
+}
+
+.editar{
+    border: solid 2px black;
+    border-radius: 5px;
+    color: white;
+    background-color: gray;
+}
+
+.editar:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    position: fixed;
+    bottom: 0;
+    margin-left: 0;
+}
+
+footer:hover{
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+}
+
+footer a{
+    text-align: center;
+    font-size: 20px;
+    background-color: orange;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .formulario{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .cont-tabla{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}

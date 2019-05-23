@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+header{
+    background-color: rgb(29, 29, 29);
+    margin-bottom: 10px; 
+    border-radius: 5px;
+}
+header h1{
+color: white;
+}
+h1{
+    text-align: center;
+}
+
+.card{
+    max-width: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    border: solid 1px black; 
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.card h3{
+    text-align: center;
+}
+
+a{
+    display: block;
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: #2650BA;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+a :hover{
+    background-color: rgb(70, 104, 189);
+}
